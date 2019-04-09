@@ -20,7 +20,7 @@ rocket = "lucas/ssd"
 model = Rocket.land(rocket)
 model.eval()
 
-# --- INFERENCE ---
+# --- DETECTION ---
 with torch.no_grad():
     img_tensor = model.preprocess(img)
     out = model(Variable(img_tensor))
