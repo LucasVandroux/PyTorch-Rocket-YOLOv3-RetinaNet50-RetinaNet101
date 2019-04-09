@@ -1,6 +1,6 @@
 import torch
 from torch.autograd import Variable
-from rockethub.Rocket import Rocket
+from rockethub import Rocket
 from PIL import Image
 
 # --- LOAD IMAGE ---
