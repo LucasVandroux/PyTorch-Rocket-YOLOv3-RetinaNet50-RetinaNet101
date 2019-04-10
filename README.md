@@ -7,17 +7,17 @@ We want to solve this problem and we packaged 3 state-of-the-art Deep Learning m
 
 We are calling those new way of packaging Deep Learning models: __Rockets__.
 
-__Welcome to the Rockets Builder Community!!!__
+__Welcome to the Rockets Scientists Community!!!__
 
-## Install the python dependencies
+## Install the repositories
+We recommend you to use an isolated Python environement such as [virtualenv](https://virtualenv.pypa.io/en/latest/) or [conda](https://docs.conda.io/en/latest/) with at least __Python 3.5__. Then you can use the following lines of code:
 ```
-# Python 3.5.2
-python3 -m virtualenv .env
-source .env/bin/activate
+git clone https://github.com/LucasVandroux/rockethub-tutorial1.git
+cd rockethub-tutorial1
 pip install -r requirements.txt
 ```
 ## A Tale of 3 Rockets
-For this first tutorial, we selected three state-of-the-art models for you to play with:
+For this first tutorial, we selected three state-of-the-art models in Object Detection for you to play with:
 1. SSD: Single Shot MultiBox Detector ___[[paper]](https://arxiv.org/pdf/1512.02325.pdf)___
 2. RetinaNet ___[[paper]](https://arxiv.org/pdf/1708.02002.pdf)___
 3. YOLOv3 ___[[paper]](https://pjreddie.com/media/files/papers/YOLOv3.pdf)___
@@ -36,7 +36,7 @@ Don't hesitate to play around by swapping the different Rockets and comparing th
 |`shop.jpg`|![image-original-shop](images/shop.jpg)|![image-ssd-shop](images/detections/ssd/shop.jpg)|![image-retinanet-shop](images/detections/retinanet/shop.jpg)|![image-yolov3-shop](images/detections/yolov3/shop.jpg)|
 |`street.jpg`|![image-original-street](images/street.jpg)|![image-ssd-street](images/detections/ssd/street.jpg)|![image-retinanet-street](images/detections/retinanet/street.jpg)|![image-yolov3-street](images/detections/yolov3/street.jpg)|
 
-The Rockets are also outputting a Json formatted answer that you can use to integrate the Rockets in a Kickass project.
- 
+The Rockets are also outputting a Json formatted answer that you can use to integrate the Rockets in one of your Kickass project.
+
 ## Contact
 Any feedback or complaint from your neighbors about the noise your Rockets are making, please contact us at [hello@mirage.id](mailto:hello@mirage.id). 
