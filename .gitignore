@@ -72,6 +72,9 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# VSCode
+.vscode/
+
 # pyenv
 .python-version
 
@@ -105,4 +108,4 @@ venv.bak/
 
 # Rockets
 rockets/
-out.png
+out.jpg

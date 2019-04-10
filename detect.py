@@ -32,6 +32,6 @@ print(bboxes_out)
 
 # Display the output over the image
 img_out = model.postprocess(out, img, visualize=True)
-img_out.save("out.png")
+img_out.save("out.jpg")
 
 
