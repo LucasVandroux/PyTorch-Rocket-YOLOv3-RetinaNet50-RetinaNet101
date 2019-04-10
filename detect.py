@@ -17,13 +17,12 @@ rocket = "lucas/ssd"
 # rocket = "igor/retinanet"
 # rocket = "lucas/yolov3"
 
-model = Rocket.land(rocket)
-model.eval()
+model = Rocket.land(rocket).eval()
 
 # --- DETECTION ---
 with torch.no_grad():
     img_tensor = model.preprocess(img)
-    out = model(Variable(img_tensor))
+    out = model(img_tensor)
 
 # --- OUTPUT ---
 # Print the output as a JSON
