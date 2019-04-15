@@ -16,6 +16,9 @@ git clone https://github.com/LucasVandroux/rockethub-tutorial1.git
 cd rockethub-tutorial1
 pip install -r requirements.txt
 ```
+### Install PyTorch
+As the installation for PyTorch is different for each platform, you need to look at the [PyTorch installation guide](https://pytorch.org/get-started/locally/). Don't worry it is very simple, maximum 2 lines of codes :stuck_out_tongue_closed_eyes:
+
 ## A Tale of 3 Rockets
 For this first tutorial, we selected three state-of-the-art models in Object Detection for you to play with:
 1. SSD: Single Shot MultiBox Detector ___[[paper]](https://arxiv.org/pdf/1512.02325.pdf)___
