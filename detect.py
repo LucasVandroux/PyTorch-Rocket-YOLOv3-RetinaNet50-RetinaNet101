@@ -1,11 +1,18 @@
+import inspect, os
+
 import torch
 from torch.autograd import Variable
 from rockethub import Rocket
 from PIL import Image
 
+# --- FILE PATH ---
+# Make location dynamic so you can run this script from anywhere
+# print inspect.getfile(inspect.currentframe()) # script filename (usually with path)
+root = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) # script directory
+
 # --- LOAD IMAGE ---
 # Select the image you want to test the Object Detection Model with
-image_path = 'images/office.jpg'
+image_path = root+'/images/office.jpg'
 # image_path = 'images/shop.jpg'
 # image_path = 'images/street.jpg'
 
@@ -14,7 +21,7 @@ img = Image.open(image_path)
 # --- LOAD ROCKET ---
 # Select the Rocket you want to test
 rocket = "lucas/ssd"
-rocket = "igor/retinanet"
+# rocket = "igor/retinanet"
 # rocket = "lucas/yolov3"
 
 model = Rocket.land(rocket).eval()
@@ -35,7 +42,7 @@ print(*bboxes_out, sep='\n')
 
 # Display the output over the image
 img_out = model.postprocess(out, img, visualize=True)
-img_out_path = 'out.jpg'
+img_out_path = root+'/out.jpg'
 img_out.save(img_out_path)
 print('You can see the detections on the image: \'' + img_out_path +'\'.')
 
