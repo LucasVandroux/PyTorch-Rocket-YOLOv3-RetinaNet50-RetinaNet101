@@ -5,14 +5,9 @@ from torch.autograd import Variable
 from rockethub import Rocket
 from PIL import Image
 
-# --- FILE PATH ---
-# Make location dynamic so you can run this script from anywhere
-# print inspect.getfile(inspect.currentframe()) # script filename (usually with path)
-root = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) # script directory
-
 # --- LOAD IMAGE ---
 # Select the image you want to test the Object Detection Model with
-image_path = root+'/images/office.jpg'
+image_path = 'images/office.jpg'
 # image_path = 'images/shop.jpg'
 # image_path = 'images/street.jpg'
 
