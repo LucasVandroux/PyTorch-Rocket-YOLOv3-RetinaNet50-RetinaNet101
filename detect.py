@@ -37,7 +37,7 @@ print(*bboxes_out, sep='\n')
 
 # Display the output over the image
 img_out = model.postprocess(out, img, visualize=True)
-img_out_path = root+'/out.jpg'
+img_out_path = 'out.jpg'
 img_out.save(img_out_path)
 print('You can see the detections on the image: \'' + img_out_path +'\'.')
 
