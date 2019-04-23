@@ -12,7 +12,7 @@ __Welcome to the Rockets Scientists Community!!!__
 ## Install the repositories
 We recommend you to use an isolated Python environement such as [virtualenv](https://virtualenv.pypa.io/en/latest/) or [conda](https://docs.conda.io/en/latest/) with at least __Python 3.5__. Then you can use the following lines of code:
 ```
-git clone https://github.com/LucasVandroux/rockethub-tutorial1.git
+git clone https://github.com/LucasVandroux/PyTorch-Rocket-YOLOv3-RetinaNet-SSD
 cd rockethub-tutorial1
 pip install -r requirements.txt
 ```
