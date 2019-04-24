@@ -13,7 +13,7 @@ __Welcome to the Rockets Scientists Community!!!__
 We recommend you to use an isolated Python environement such as [virtualenv](https://virtualenv.pypa.io/en/latest/) or [conda](https://docs.conda.io/en/latest/) with at least __Python 3.5__. Then you can use the following lines of code:
 ```
 git clone https://github.com/LucasVandroux/PyTorch-Rocket-YOLOv3-RetinaNet-SSD
-cd rockethub-tutorial1
+cd PyTorch-Rocket-YOLOv3-RetinaNet-SSD
 pip install -r requirements.txt
 ```
 ### Install PyTorch
