@@ -1,8 +1,5 @@
-import inspect, os
-
 import torch
-from torch.autograd import Variable
-from rockethub import Rocket
+from rocketbase import Rocket
 from PIL import Image
 
 # --- LOAD IMAGE ---
@@ -15,8 +12,8 @@ img = Image.open(image_path)
 
 # --- LOAD ROCKET ---
 # Select the Rocket you want to test
-rocket = "lucas/ssd"
-# rocket = "igor/retinanet"
+rocket = "igor/retinanet"
+# rocket = "igor/retinanet-resnet101-800px"
 # rocket = "lucas/yolov3"
 
 model = Rocket.land(rocket).eval()
@@ -39,6 +36,4 @@ print(*bboxes_out, sep='\n')
 img_out = model.postprocess(out, img, visualize=True)
 img_out_path = 'out.jpg'
 img_out.save(img_out_path)
-print('You can see the detections on the image: \'' + img_out_path +'\'.')
-
-
+print('You can see the detections on the image: \'' + img_out_path + '\'.')
